@@ -10,7 +10,7 @@ var MarketList = React.createClass({displayName: 'MarketList',
             dataType: 'json',
             success: function(data) {
                 this.setState({
-                    data: data
+                    data: data.results
                 });
             }.bind(this),
             error: function(xhr, status, err) {
@@ -39,7 +39,7 @@ var MarketList = React.createClass({displayName: 'MarketList',
             <div className="marketPage">
                 <div className="marketList six columns">
                   <div className="twelve columns">
-                    <h2>Market< /h2>
+                    <h4>Market< /h4>
                   </div>
                     {market}
                 </div>

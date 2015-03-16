@@ -13,6 +13,7 @@ var RecipeView = React.createClass({
                         {this.state.recipe.title}
                     </h2>
                     {this.state.recipe.social_rank}
+                    <p>Source: {this.state.recipe.source_url}</p>
                 </div>
             )
 

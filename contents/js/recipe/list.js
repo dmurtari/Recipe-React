@@ -9,8 +9,9 @@ var RecipeList = React.createClass({displayName: 'RecipeList',
             url: this.props.url,
             dataType: 'json',
             success: function(data) {
+                console.log(data.recipes)
                 this.setState({
-                    data: data
+                    data: data.recipes
                 });
             }.bind(this),
             error: function(xhr, status, err) {
